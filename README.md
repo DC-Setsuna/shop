@@ -1,6 +1,6 @@
-# ibook
+# shop
 
-> Online bookstore
+> Online shop
 
 ## Build Setup
 
