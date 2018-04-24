@@ -7,6 +7,7 @@ import Ranking from '@/components/Ranking'
 import Car from '@/components/Car'
 import User from '@/components/User'
 import Prodetail from '@/components/Prodetail'
+import Booksale from '@/components/Booksale'
 
 Vue.use(Router)
 
@@ -41,6 +42,11 @@ export default new Router({
       path: '/prodetail/:proid',
       name: 'Prodetail',
       component: Prodetail
+    },
+    {
+      path: '/booksale',
+      name: 'booksale',
+      component: Booksale
     }
   ]
 })

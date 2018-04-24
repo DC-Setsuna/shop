@@ -5,8 +5,8 @@
       <div class="header_nav">
         <el-menu theme="dark" :router="true" class="el-menu-demo" mode="horizontal" @select="handleSelect" style="background-color:rgb(52, 66, 87);">
           <el-menu-item index="/">首页</el-menu-item>
-          <!-- <el-menu-item index="/highsearch"><i class="el-icon-search"></i>高级搜索</el-menu-item> -->
           <el-menu-item index="/ranking">热卖商品</el-menu-item>
+          <el-menu-item v-if="this.$store.state.username=='adminadmin'" index="/booksale">货品添加</el-menu-item>
           <el-menu-item index="/car" v-if="this.$store.state.islogin">购物车
             <el-badge :value="$store.state.car_count" /></el-menu-item>
           <el-menu-item index="" v-if="!this.$store.state.islogin"><i class="el-icon-goods"></i>登录</el-menu-item>
